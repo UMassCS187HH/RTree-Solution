@@ -18,6 +18,11 @@ public class Point {
 	public String toString(){
 		return x+", " + y;
 	}
+	public double distance(Point that){
+		//TODO
+		return Math.sqrt(Math.pow(this.getX() - that.getX(),2) + 
+				Math.pow(this.getY() - that.getY(),2));
+	}
 	@Override
 	@SuppressWarnings("unchecked")
 	public boolean equals(Object o) {

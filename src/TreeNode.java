@@ -4,4 +4,5 @@ public interface TreeNode {
 	boolean isFull();
 	boolean hasMin();
 	boolean contains(TreeNode that);
+	Point getPoint();
 }

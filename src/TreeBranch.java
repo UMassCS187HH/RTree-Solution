@@ -92,4 +92,16 @@ public class TreeBranch implements TreeNode{
 				thatBound.getHeight() <= rect.getHeight();
 		}
 	}
+	public void replaceChild(TreeNode oldNode, TreeNode newNode) {
+		for(int i = 0; i <= current; i++) {
+			if (children[i] == oldNode) {
+				children[i] = newNode;
+			}
+		}
+	}
+	@Override
+	public Point getPoint() {
+		Rect bound = getBoundingRect();
+		return new Point(bound.getX() + bound.getWidth() / 2, bound.getY() + bound.getWidth() / 2);
+	}
 }
