@@ -4,7 +4,7 @@ public class Constants {
 
 	public final static int WINDOW_WIDTH = 500;
 	public final static int WINDOW_HEIGHT = 500;
-	public final static int NODE_CHILDREN_MAX = 4;
+	public final static int NODE_CHILDREN_MAX = 2;
 	public final static int NODE_CHILDREN_MIN = 1;
 
 	public static TreeLeaf[] generateLocations(int seed, int length) {

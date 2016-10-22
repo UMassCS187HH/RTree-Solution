@@ -5,4 +5,6 @@ public interface TreeNode {
 	boolean hasMin();
 	boolean contains(TreeNode that);
 	Point getPoint();
+	TreeBranch getParent();
+	void setParent(TreeBranch parent);
 }
